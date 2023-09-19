@@ -1,0 +1,245 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    background-color: #F0EFF1;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro-circle {
+    width: 225%;
+    height: 150%;
+    border-radius: 100%;
+    background-color: #685BF6;
+    position: absolute;
+    top: -67.5%;
+    left: -62.5%;
+}
+
+.intro-text {
+    padding-left: 10%;
+    padding-top: 40%;
+    padding-right: 10%;
+    margin: auto;
+}
+
+.intro-text,
+.intro-button {
+    z-index: 1;
+    position: relative;
+}
+
+.intro-text h1,
+.intro-text p {
+    color: #F0EFF1;
+}
+
+.intro-text .intro-1 {
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.intro-text .intro-naufal,
+.intro-rifqi {
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.intro-text .intro-rifqi {
+    margin-top: -6%;
+}
+
+.intro-text .intro-p {
+
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* .intro-text .intro-p span {
+    padding: 0 25%;
+} */
+
+.intro-button {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.intro-work,
+.intro-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37.5%;
+    height: 2em;
+    background-color: #F0EFF1;
+    border-radius: 50px;
+}
+
+.intro-button a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #1E1825;
+}
+
+.intro-nextpage {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    z-index: 10;
+    position: relative;
+}
+
+.intro-nextpage a {
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 12px;
+    color: #F0EFF1;
+}
+
+.article-main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0EFF1;
+}
+
+.article-hero {
+    padding: 0 10%;
+}
+
+.article-main .article-1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #1E1825;
+    text-align: right;
+}
+
+.article-main .article-ordinary,
+.article-process {
+    font-size: 4em;
+    font-weight: 700;
+    color: #1E1825;
+}
+
+.article-hero .article-process {
+    margin-top: -6%;
+}
+
+.article-main .article-p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #1E1825;
+}
+
+.article-work {
+    display: flex;
+    gap: 1em;
+    padding-top: 5em;
+    justify-content: left;
+    align-items: center;
+}
+
+.article-work .article-morework {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.article-work .article-icon {
+    width: 1.5em;
+}
+
+.article-circle {
+    width: 100vw;
+    height: 100vw;
+    border-radius: 100%;
+    background-color: #685BF6;
+    position: absolute;
+    z-index: 10;
+    top: 160%;
+}
+
+.work {
+    background-color: #F0EFF1;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 25%;
+}
+
+.work .work-intro {
+    padding: 0 10%;
+}
+
+.work .work-some {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #1E1825;
+}
+
+.work .work-shapen {
+    font-weight: 700;
+    font-size: 4em;
+    color: #1E1825;
+}
+
+.work .work-image-group {
+    margin-top: -4%;
+    display: flex;
+
+}
+
+.work .work-image {
+    font-weight: 700;
+    font-size: 4em;
+    color: #1E1825;
+}
+
+.work .wasmoved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+    padding-left: 1em;
+}
+
+.work .work-was,
+.work-moved {
+    font-weight: 500;
+    font-size: 1.35em;
+    color: #1E1825;
+}
+
+.work .work-p {
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #908A99;
+}
+
+.work-herocard {
+    padding: 0 10%;
+    padding-top: 25%;
+}
+
+.work-herocard .nameproject {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #1E1825;
+}
+
+.work-herocard .nameclient {
+    font-weight: 200;
+    font-size: 1em;
+    color: #1E1825;
+}
