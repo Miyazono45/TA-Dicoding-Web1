@@ -36,7 +36,7 @@ main {
   border-radius: 100%;
   background-color: #685bf6;
   position: absolute;
-  top: -67.5%;
+  top: calc(-100vh + 60%);
   left: -85%;
 }
 
@@ -45,6 +45,7 @@ main {
 }
 
 @media screen and (min-width: 375px) {
+
   .intro-circle,
   .footer-circle {
     left: -89%;
@@ -170,6 +171,7 @@ main {
 }
 
 @media only screen and (min-width: 375px) {
+
   .article-main .article-ordinary,
   .article-process {
     font-size: 3.75em;
@@ -222,7 +224,7 @@ main {
   background-color: #f0eff1;
   width: 100vw;
   height: 100%;
-  padding-top: 25%;
+  padding-top: 40%;
 }
 
 .work .work-intro {
@@ -454,7 +456,7 @@ footer {
   }
 
   .article-main {
-    padding-top: 20vh;
+    padding-top: 0;
   }
 
   .article-main .article-ordinary,
@@ -462,15 +464,19 @@ footer {
     display: none;
   }
 
+  .article-hero {
+    padding-top: 15vw;
+  }
+
   .article-hero .article-1 {
-    font-size: 1.25em;
+    font-size: 2em;
   }
 
   .article-ordinaryp {
     display: inline-block;
-    font-size: 2.75em;
+    font-size: 3.25em;
     font-weight: 700;
-    margin-top: -0.25em;
+    margin-top: -0.1em;
   }
 
   .article-p {
@@ -478,14 +484,14 @@ footer {
   }
 
   .mask-p2 {
-    width: 48vw;
+    width: 75vw;
     height: 100%;
   }
 
   .article-p2 {
     margin-top: -0.25em;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 300;
     color: #1e1825;
     padding-left: 0.2em;
@@ -497,11 +503,156 @@ footer {
   }
 
   .article-work .article-morework {
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 1.25em;
+    font-weight: 500;
   }
 
   .article-work svg {
     margin-left: -0.3em;
   }
+
+  .article-circle {
+    display: none;
+  }
+
+  .mask-whitecircle2 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 85vw;
+  }
+
+  .intro-whitecircle2 {
+    display: inline-block;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 100%;
+    background-color: #685bf6;
+    position: absolute;
+    z-index: 1000;
+    top: 75%;
+    left: -1vh;
+  }
+
+  .work {
+    background-color: #f0eff1;
+    padding-top: 0;
+  }
+
+  .work-intro {
+    display: none;
+  }
+
+  .work-intro2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+  }
+
+  .work-shapeimg,
+  .work-wasmoved,
+  .work-p2 {
+    color: #685bf6;
+  }
+
+  .work-shapeimg {
+    padding-top: 15vh;
+    font-size: 4.25em;
+    font-weight: 700;
+  }
+
+  .work-wasmoved {
+    font-size: 1.85em;
+    font-weight: 400;
+    margin-top: -.5em;
+  }
+
+  .work-p2 {
+    font-size: 1.18em;
+    font-weight: 200;
+  }
+
+  .allcard {
+    padding-top: 15vh;
+  }
+
+  .work-card .nameproject,
+  .work-card .nameclient {
+    color: #685bf6;
+  }
+
+  .work-herocard .nameproject {
+    font-size: 1.65em;
+  }
+
+  .work-herocard .nameclient {
+    font-size: 1.15em;
+  }
+
+  .work-herocard:not(:first-child) {
+    padding-top: 5em;
+  }
+
+  footer {
+    padding-top: 45%;
+  }
+
+  .mask-footer-circle {
+    display: none;
+  }
+
+  .footer-hero {}
+
+  .footer-h1 {
+    padding-top: 50%;
+    color: #685bf6;
+    font-size: 3.25em;
+    font-weight: 700;
+    line-height: 95%;
+  }
+
+  .footer-p {
+    padding-top: 5%;
+    color: #685bf6;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .footer-sosmed {
+    padding-top: 20%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-sosmed svg {
+    width: 2em;
+  }
+
+  .footer-contact-h1 {
+    margin-top: 0.5em;
+    color: #685bf6;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .footer-contact-a {
+    margin-top: 0.2em;
+    color: #685bf6;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration-line: underline;
+  }
+
+  .footer-sosmed svg {
+    fill: #685bf6;
+  }
+
+  .instagram {
+    width: 100px;
+    height: 100px;
+  }
+
 }
