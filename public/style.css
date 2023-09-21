@@ -304,6 +304,10 @@ main {
   width: 100%;
 }
 
+.work-intro2 {
+  display: none;
+}
+
 footer {
   background-color: #f0eff1;
   padding-top: 75%;
@@ -597,32 +601,35 @@ footer {
   }
 
   footer {
-    padding-top: 45%;
+    padding-top: 30%;
+    padding-bottom: 15%;
   }
 
   .mask-footer-circle {
     display: none;
   }
 
-  .footer-hero {}
+  .footer-h1-mask {
+    width: 85%;
+  }
 
   .footer-h1 {
-    padding-top: 50%;
+    padding-top: 0;
     color: #685bf6;
-    font-size: 3.25em;
+    font-size: 4em;
     font-weight: 700;
     line-height: 95%;
   }
 
   .footer-p {
-    padding-top: 5%;
+    padding-top: 1.5%;
     color: #685bf6;
-    font-size: 1em;
+    font-size: 1.52em;
     font-weight: 300;
   }
 
   .footer-sosmed {
-    padding-top: 20%;
+    padding-top: 10%;
     display: flex;
     gap: 20px;
   }
@@ -634,25 +641,22 @@ footer {
   .footer-contact-h1 {
     margin-top: 0.5em;
     color: #685bf6;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 700;
   }
 
   .footer-contact-a {
     margin-top: 0.2em;
     color: #685bf6;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 300;
     text-decoration-line: underline;
   }
 
   .footer-sosmed svg {
-    fill: #685bf6;
-  }
-
-  .instagram {
-    width: 100px;
-    height: 100px;
+    /* color: #685bf6; */
+    width: 48px;
+    height: 48px;
   }
 
 }
