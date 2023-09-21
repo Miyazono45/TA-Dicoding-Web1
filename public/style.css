@@ -45,7 +45,6 @@ main {
 }
 
 @media screen and (min-width: 375px) {
-
   .intro-circle,
   .footer-circle {
     left: -89%;
@@ -170,8 +169,11 @@ main {
   text-align: left;
 }
 
-@media only screen and (min-width: 375px) {
+.ungu {
+  display: none;
+}
 
+@media only screen and (min-width: 375px) {
   .article-main .article-ordinary,
   .article-process {
     font-size: 3.75em;
@@ -352,13 +354,24 @@ footer {
   font-weight: 300;
 }
 
-.footer-sosmed {
+.footer-sosmed-putih {
   padding-top: 20%;
   display: flex;
   gap: 20px;
 }
 
-.footer-sosmed svg {
+.footer-sosmed-putih svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-sosmed-ungu {
+  padding-top: 15%;
+  display: none;
+  gap: 20px;
+}
+
+.footer-sosmed-ungu svg {
   width: 2em;
 }
 
@@ -389,6 +402,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* margin-top: -5vh; */
   }
 
   .intro-circle {
@@ -524,7 +538,7 @@ footer {
     height: 100vh;
     overflow: hidden;
     position: absolute;
-    top: 85vw;
+    top: 100vh;
   }
 
   .intro-whitecircle2 {
@@ -571,7 +585,7 @@ footer {
   .work-wasmoved {
     font-size: 1.85em;
     font-weight: 400;
-    margin-top: -.5em;
+    margin-top: -0.5em;
   }
 
   .work-p2 {
@@ -628,14 +642,8 @@ footer {
     font-weight: 300;
   }
 
-  .footer-sosmed {
-    padding-top: 10%;
+  .footer-sosmed-ungu {
     display: flex;
-    gap: 20px;
-  }
-
-  .footer-sosmed svg {
-    width: 2em;
   }
 
   .footer-contact-h1 {
@@ -653,10 +661,12 @@ footer {
     text-decoration-line: underline;
   }
 
-  .footer-sosmed svg {
-    /* color: #685bf6; */
+  .footer-sosmed-ungu svg {
     width: 48px;
     height: 48px;
   }
 
+  .footer-sosmed-putih {
+    display: none;
+  }
 }
