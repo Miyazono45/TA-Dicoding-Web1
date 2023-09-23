@@ -30,6 +30,10 @@ main {
   position: absolute;
 }
 
+.mask-bgimg {
+  display: none;
+}
+
 .intro-circle {
   width: 275%;
   height: 150%;
@@ -45,6 +49,7 @@ main {
 }
 
 @media screen and (min-width: 375px) {
+
   .intro-circle,
   .footer-circle {
     left: -89%;
@@ -174,6 +179,7 @@ main {
 }
 
 @media only screen and (min-width: 375px) {
+
   .article-main .article-ordinary,
   .article-process {
     font-size: 3.75em;
@@ -669,4 +675,185 @@ footer {
   .footer-sosmed-putih {
     display: none;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .intro-1 {
+    font-size: 2.25em;
+  }
+
+  .intro-naufalrifqi {
+    font-size: 5.5em;
+  }
+
+  .intro-p {
+    font-size: 1.5em;
+  }
+
+  .intro-work,
+  .intro-play {
+    width: 25%;
+    height: 2.75em;
+  }
+
+  .intro-button a {
+    font-size: 1.35em;
+  }
+
+  .mask-bgimg {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+  }
+
+  .mask-bgimg .glassimg1 {
+    position: absolute;
+    right: -15%;
+    bottom: 10%;
+    width: 30%;
+    transform: rotate(-19.44deg);
+  }
+
+  .mask-bgimg .glassimg2 {
+    position: absolute;
+    left: -20%;
+    top: -5%;
+    width: 40%;
+    transform: rotate(27.709deg);
+  }
+
+  .article-hero .article-1 {
+    font-size: 1.75em;
+  }
+
+  .article-ordinaryp {
+    font-size: 3.5em;
+  }
+
+  .mask-p2 {
+    width: 42vw;
+  }
+
+  .article-work .article-morework {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+  .article-work .article-icon {
+    width: 2.25em;
+  }
+
+
+  .card-ae1 {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 120vh;
+    left: 66vw;
+    width: 280px;
+    height: 352px;
+    padding: 0 1em;
+    border-radius: 5%;
+    box-sizing: border-box;
+    background-color: #f0eff1;
+  }
+
+  .ae1-logo {
+    margin-top: 7.5%;
+    width: 3em;
+  }
+
+  .ae1-textmain h1 {
+    color: #1E1825;
+    margin-top: 3%;
+    font-size: .9em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .ae1-tellmore {
+    display: flex;
+    width: 100%;
+    margin-top: 7.5%;
+  }
+
+  .ae1-tellmore p {
+    font-weight: 700;
+    font-size: .6em;
+    text-align: left;
+  }
+
+  .ae1-blankstroke {
+    margin-top: 2.5%;
+    width: 100%;
+    height: 98px;
+    outline: .55px solid #1E1825;
+  }
+
+  .ae1-atleast p {
+    margin-top: 7.5%;
+    font-size: .6em;
+    text-align: center;
+    font-weight: 600;
+    color: #685bf6;
+  }
+
+  .ae1-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    gap: 1%;
+    width: 100%;
+  }
+
+  .ae1-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 1em;
+    background-color: #1e1825;
+    border-radius: 5%;
+  }
+
+  .ae1-button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 1em;
+    background-color: #1e1825;
+    border-radius: 5%;
+  }
+
+  .ae1-button1 h1,
+  .ae1-button2 h1 {
+    color: #F0EFF1;
+    text-align: center;
+    font-size: .5em;
+    font-weight: 600;
+  }
+
+  .card-ae1-shadow {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 121vh;
+    left: 66.75vw;
+    width: 280px;
+    height: 352px;
+    padding: 0 1em;
+    border-radius: 5%;
+    box-sizing: border-box;
+    background-color: #685bf6;
+  }
+
 }
