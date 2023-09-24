@@ -4,12 +4,17 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   width: 100vw;
 }
 
-main {
+main,
+header {
   width: 100vw;
   overflow-x: hidden;
 }
@@ -21,6 +26,10 @@ main {
 .intro {
   width: 100vw;
   height: 100vh;
+}
+
+span {
+  content: "\003E";
 }
 
 .mask-intro-circle {
@@ -49,7 +58,6 @@ main {
 }
 
 @media screen and (min-width: 375px) {
-
   .intro-circle,
   .footer-circle {
     left: -89%;
@@ -179,7 +187,6 @@ main {
 }
 
 @media only screen and (min-width: 375px) {
-
   .article-main .article-ordinary,
   .article-process {
     font-size: 3.75em;
@@ -218,7 +225,8 @@ main {
   width: 1.5em;
 }
 
-.card-ae1 {
+.card-ae1,
+.card-ae2 {
   display: none;
 }
 
@@ -612,6 +620,10 @@ footer {
     color: #685bf6;
   }
 
+  .work-card a {
+    display: inline-block;
+  }
+
   .work-herocard .nameproject {
     font-size: 1.65em;
   }
@@ -630,6 +642,10 @@ footer {
   }
 
   .mask-footer-circle {
+    display: none;
+  }
+
+  .mask-whitecircle3 {
     display: none;
   }
 
@@ -682,7 +698,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .intro-1 {
     font-size: 2.25em;
   }
@@ -750,7 +765,6 @@ footer {
     width: 2.25em;
   }
 
-
   .card-ae1 {
     position: absolute;
     z-index: 10;
@@ -773,9 +787,9 @@ footer {
   }
 
   .ae1-textmain h1 {
-    color: #1E1825;
+    color: #1e1825;
     margin-top: 3%;
-    font-size: .9em;
+    font-size: 0.9em;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -789,7 +803,7 @@ footer {
 
   .ae1-tellmore p {
     font-weight: 700;
-    font-size: .6em;
+    font-size: 0.6em;
     text-align: left;
   }
 
@@ -797,12 +811,12 @@ footer {
     margin-top: 2.5%;
     width: 100%;
     height: 98px;
-    outline: .55px solid #1E1825;
+    outline: 0.55px solid #1e1825;
   }
 
   .ae1-atleast p {
     margin-top: 7.5%;
-    font-size: .6em;
+    font-size: 0.6em;
     text-align: center;
     font-weight: 600;
     color: #685bf6;
@@ -838,9 +852,9 @@ footer {
 
   .ae1-button1 h1,
   .ae1-button2 h1 {
-    color: #F0EFF1;
+    color: #f0eff1;
     text-align: center;
-    font-size: .5em;
+    font-size: 0.5em;
     font-weight: 600;
   }
 
@@ -860,4 +874,211 @@ footer {
     background-color: #685bf6;
   }
 
+  .card-ae2 {
+    position: absolute;
+    z-index: 7;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: centers;
+    top: 140vh;
+    left: 55vw;
+    width: 350px;
+    height: 142px;
+    padding: 0 1em;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #685bf6;
+  }
+
+  .ae2-logo {
+    width: 7em;
+  }
+
+  .ae2-textmain h1 {
+    color: #f0eff1;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .card-ae2-shadow {
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    top: 140.75vh;
+    left: 55.5vw;
+    width: 350px;
+    height: 142px;
+    padding: 0 1em;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #1e1825;
+  }
+
+  .allcard {
+    display: flex;
+    padding: 10% 10% 0 10%;
+    gap: 2.5%;
+  }
+
+  .work-herocard {
+    padding: 0;
+  }
+
+  .work-herocard:not(:first-child) {
+    padding-top: 0;
+  }
+
+  .work-card .nameproject {
+    font-size: 1.25em;
+  }
+
+  .work-card .nameclient {
+    font-size: 1em;
+  }
+
+  footer {
+    padding-top: 30%;
+    padding-bottom: 15%;
+  }
+
+  .card-ae3 {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 66vw;
+    width: 280px;
+    height: 352px;
+    padding: 0 1em;
+    border-radius: 5%;
+    box-sizing: border-box;
+    background-color: #f0eff1;
+  }
+
+  .ae3-logo {
+    margin-top: 7.5%;
+    width: 3em;
+  }
+
+  .ae3-mypicture {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .ae3-mypicture img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .ae3-atleast p {
+    margin-top: 7.5%;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 600;
+    color: #1e1825;
+  }
+
+  .ae3-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    gap: 1%;
+    width: 100%;
+  }
+
+  .ae3-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 1em;
+    background-color: #1e1825;
+    border-radius: 5px;
+  }
+
+  .ae3-button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 1em;
+    background-color: #1e1825;
+    border-radius: 5px;
+  }
+
+  .ae3-button1 h1,
+  .ae3-button2 h1 {
+    color: #f0eff1;
+    text-align: center;
+    font-size: 0.55em;
+    font-weight: 600;
+  }
+
+  .card-ae3-shadow {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0.5vh;
+    left: 66.75vw;
+    width: 280px;
+    height: 352px;
+    padding: 0 1em;
+    border-radius: 5%;
+    box-sizing: border-box;
+    background-color: #685bf6;
+  }
+
+  .card-ae4 {
+    position: absolute;
+    z-index: 7;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: centers;
+    top: 10vh;
+    left: 55vw;
+    width: 350px;
+    height: 142px;
+    padding: 0 1em;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #685bf6;
+  }
+
+  .ae4-logo {
+    width: 7em;
+  }
+
+  .ae4-textmain h1 {
+    color: #f0eff1;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .card-ae4-shadow {
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    top: 10.75vh;
+    left: 55.5vw;
+    width: 350px;
+    height: 142px;
+    padding: 0 1em;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #1e1825;
+  }
 }
