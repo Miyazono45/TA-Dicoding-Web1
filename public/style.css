@@ -218,6 +218,10 @@ main {
   width: 1.5em;
 }
 
+.card-ae1 {
+  display: none;
+}
+
 .article-circle {
   width: 100vw;
   height: 100vw;
